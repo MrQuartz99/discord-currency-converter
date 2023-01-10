@@ -6,7 +6,7 @@ async function getCurrency(firstCurrency , secondCurrency) {
     if(result === undefined) return 0
     if(result.toString().length === 4) {
         let newResult = result.toString().slice(0,2) + "." + result.toString().slice(2,4)
-        return Number(newResult)
+        return parseFloat(newResult)
     }
 
     return result
