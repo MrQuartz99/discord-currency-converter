@@ -8,7 +8,6 @@ async function getCurrency(firstCurrency , secondCurrency) {
         let newResult = result.toString().slice(0,2) + "." + result.toString().slice(2,4)
         return parseFloat(newResult)
     }
-
     return result
 }
 module.exports = getCurrency

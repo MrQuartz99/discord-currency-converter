@@ -16,6 +16,6 @@ setInterval(async () => {
     previousResult = currency
     let embed = makeEmbed(data , firstCurrency , secondCurrency)
     webhookClient.send({embeds: [embed] , files: [data.attachment]})
-}, 1000  * 5)
+}, 1000  * 60 * 2)
 console.log("Started")
 
