@@ -26,7 +26,7 @@ async function createImage(currency , direction , firstCurrency , secondCurrency
     ctx.fillText(`5 ${firstCurrency} = ${Number(currency * 5).toFixed(2)} ${secondCurrency}`, 400, 150);
     ctx.fillText(`10 ${firstCurrency} = ${Number(currency * 10).toFixed(2)} ${secondCurrency}`, 400, 200);
     ctx.fillText(`100 ${firstCurrency} = ${Number(currency * 100).toFixed(2)} ${secondCurrency}`, 400, 250);
-    ctx.fillText(`${new Date().toLocaleString()}`, 400, 290);
+    ctx.fillText(`Made With ❤️ By MrQuartz#3328`, 400, 300);
     // Get the buffer
     const buffer = canvas.toBuffer('image/png')
     // make a new discord attachment
